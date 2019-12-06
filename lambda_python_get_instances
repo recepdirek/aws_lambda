@@ -1,3 +1,13 @@
+pip install boto3
+pip install awscli
+aws configure --profile dev_root
+
+access id
+access key
+region
+output
+
+
 import boto3
 session=boto3.session.Session(profile_name="dev_root")
 ec2_con_re=session.resource(service_name="ec2", region_name="eu-west-1")
